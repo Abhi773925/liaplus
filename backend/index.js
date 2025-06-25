@@ -5,7 +5,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const url = 'mongodb://localhost:27017/liaplus';
+// const url = 'mongodb://localhost:27017/liaplus';
+const url="mongodb+srv://rockabhisheksingh778189:Wl0yeRgWrXw5zyJ1@cluster0.wkhtzyd.mongodb.net/"
 const userroute=require('./routes/userroute');
 const blogroute=require("./routes/blogroute");
 mongoose.connect(url, {
