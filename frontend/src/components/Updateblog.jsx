@@ -17,7 +17,7 @@ const Updateblog = () => {
 
   const getBlogById = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/get", {
+      const res = await axios.get("https://liaplus.onrender.com/api/users/get", {
         params: { id },
       });
       if (res.status === 200) {
@@ -47,7 +47,7 @@ const Updateblog = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        "http://localhost:5000/api/users/updateblog",
+        "https://liaplus.onrender.com/api/users/updateblog",
         formData,
         {
           params: { id, email },

@@ -21,7 +21,7 @@ const verifyOtp = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/users/verify-otp",
+        "https://liaplus.onrender.com/api/users/verify-otp",
         { email, otp }
       );
 

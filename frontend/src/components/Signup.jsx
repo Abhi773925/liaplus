@@ -36,7 +36,7 @@ const Signup = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/createuser",
+        "https://liaplus.onrender.com/api/users/createuser",
         formData
       );
       if (response.status === 200) {

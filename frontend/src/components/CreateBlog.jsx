@@ -17,7 +17,7 @@ const CreateBlog = () => {
 
   const getBlogById = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/get", {
+      const res = await axios.get("https://liaplus.onrender.com/api/users/get", {
         params: { id },
       });
       if (res.status === 200) {
@@ -47,7 +47,7 @@ const CreateBlog = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-  "http://localhost:5000/api/users/createblog",
+  "https://liaplus.onrender.com/api/users/createblog",
   { ...formData, email }
 )
       if (response.status === 200) {

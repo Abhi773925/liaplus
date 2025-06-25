@@ -10,7 +10,7 @@ const Post = () => {
   const getPosts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/users/getblog",
+        "https://liaplus.onrender.com/api/users/getblog",
         { params: { email } }
       );
       if (response.status === 200) setPosts(response.data);

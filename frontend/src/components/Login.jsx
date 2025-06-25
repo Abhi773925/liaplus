@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault()
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/loginuser",
+        "https://liaplus.onrender.com/api/users/loginuser",
         formdata
       )
       if (response.status === 200) {

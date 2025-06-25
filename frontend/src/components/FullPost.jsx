@@ -11,7 +11,7 @@ const FullPost = () => {
 
   const getById = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/get", {
+      const res = await axios.get("https://liaplus.onrender.com/api/users/get", {
         params: { id },
       });
       if (res.status === 200) setPost(res.data);
@@ -23,7 +23,7 @@ const FullPost = () => {
   const getUserRole = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/users/checkuserrole",
+        "https://liaplus.onrender.com/api/users/checkuserrole",
         { params: { email } }
       );
       if (res.status === 200) {
@@ -36,7 +36,7 @@ const FullPost = () => {
 
   const deletePost = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/users/deleteblog`, {
+      await axios.delete(`https://liaplus.onrender.com/api/users/deleteblog`, {
         params: { id, email },
       });
       navigate("/");
