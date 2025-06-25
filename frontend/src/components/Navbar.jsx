@@ -42,7 +42,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between p-4">
           <div className="text-xl font-bold">
             <Link to="/">
-              <h2 className="text-3xl font-bold text-center text-blue-600 mb-2">Blog</h2>
+              <h2 className="text-3xl font-bold text-center text-blue-600 mb-2">Lia+</h2>
             </Link>
           </div>
           <div className="space-x-4">
@@ -71,7 +71,7 @@ const Navbar = () => {
         <nav className="flex items-center justify-between p-4">
           <div className="text-xl font-bold">
             <Link to="/">
-              <h2 className="text-3xl font-bold text-center text-blue-600 mb-2">Blog</h2>
+              <h2 className="text-3xl font-bold text-center text-blue-600 mb-2">Lia+</h2>
             </Link>
           </div>
           <div className="space-x-4">
